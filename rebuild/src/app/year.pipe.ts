@@ -30,8 +30,6 @@ export class YearPipe implements PipeTransform {
         }
       }
       return output;
-    } else {
-      return input;
     }
   }
 }

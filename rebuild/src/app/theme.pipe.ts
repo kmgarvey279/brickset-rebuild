@@ -30,8 +30,6 @@ export class ThemePipe implements PipeTransform {
         }
       }
       return output;
-    } else {
-      return input;
     }
   }
 }

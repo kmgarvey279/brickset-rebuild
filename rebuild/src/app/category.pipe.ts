@@ -58,8 +58,6 @@ export class CategoryPipe implements PipeTransform {
           }
         }
       return output;
-    } else {
-      return input;
     }
   }
 }
