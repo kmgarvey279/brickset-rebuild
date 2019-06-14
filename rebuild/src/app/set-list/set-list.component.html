@@ -1,3 +1,23 @@
-<p>
-  set-list works!
-</p>
+<select (change)="onChange($event.target.value)">
+  <option value="displayNone" selected="selected">THEME</option>
+  <option value="space">Space</option>
+  <option value="pirates">Pirates</option>
+  <option value="city">City</option>
+</select>
+<select (change)="onChange($event.target.value)">
+  <option value="displayNone" selected="selected">YEAR</option>
+  <option value="space">2019</option>
+  <option value="pirates">2018</option>
+  <option value="city">2017</option>
+</select>
+<select (change)="onChange($event.target.value)">
+  <option value="displayNone" selected="selected">CATEGORY</option>
+  <option value="random">Random</option>
+  <option value="books">Book</option>
+  <option value="normal">Normal</option>
+</select>
+<ul>
+  <li *ngFor="let currentSet of childSetList | themeFilter:filterByTheme">{{currentSet.name}}</li>
+  <li *ngFor="let currentSet of childSetList | themeFilter:filterByYear">{{currentSet.name}}</li>
+  <li *ngFor="let currentSet of childSetList | themeFilter:filterByCategory">{{currentSet.name}}</li>
+</ul>
