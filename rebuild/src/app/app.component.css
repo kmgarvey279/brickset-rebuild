@@ -1,0 +1,40 @@
+.navbar {
+  background-color: lightgray;
+  margin-bottom: 10px;
+}
+
+#log-in {
+  position: absolute;
+  top: 0px;
+  right: 60px;
+}
+
+#browse-button {
+  background-color: lightgreen;
+  color: white;
+}
+
+#buy-button {
+  background-color: green;
+  color: white;
+}
+
+#my-sets-button {
+  background-color: lightblue;
+  color: white;
+}
+
+#forum-button {
+  background-color: blue;
+  color: white;
+}
+
+#more-button {
+  background-color: orange;
+  color: white;
+}
+
+#my-menu-button {
+  background-color: red;
+  color: white;
+}
