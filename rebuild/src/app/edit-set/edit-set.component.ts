@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Set } from '../models/set.model';
 
 @Component({
-  selector: 'app-edit-set',
-  templateUrl: './edit-set.component.html',
-  styleUrls: ['./edit-set.component.css']
+  selector: 'app-edit-Set',
+  templateUrl: './edit-Set.component.html',
+  styleUrls: ['./edit-Set.component.css']
 })
-export class EditSetComponent implements OnInit {
+export class EditSetComponent {
+  @Input() childSelectedSet: Set;
+  @Output() clickedDone = new EventEmitter();
 
-  constructor() { }
-
-  ngOnInit() {
+  finishedEditing() {
+    this.clickedDone.emit();
   }
-
 }

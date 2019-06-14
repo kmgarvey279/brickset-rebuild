@@ -2,9 +2,9 @@ import { Component, Output, EventEmitter } from '@angular/core';
 import { Set } from '../models/set.model';
 
 @Component({
-  selector: 'app-new-set',
-  templateUrl: './new-set.component.html',
-  styleUrls: ['./new-set.component.css']
+  selector: 'app-new-Set',
+  templateUrl: './new-Set.component.html',
+  styleUrls: ['./new-Set.component.css']
 })
 export class NewSetComponent {
   @Output() sendSet = new EventEmitter();

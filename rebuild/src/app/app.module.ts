@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-import { SetListComponent } from './set-list/set-list.component';
-import { EditSetComponent } from './edit-set/edit-set.component';
-import { NewSetComponent } from './new-set/new-set.component';
+import { SetListComponent } from './Set-list/Set-list.component';
+import { EditSetComponent } from './edit-Set/edit-Set.component';
+import { NewSetComponent } from './new-Set/new-Set.component';
 
 
 @NgModule({

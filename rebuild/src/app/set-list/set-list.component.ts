@@ -2,9 +2,9 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Set } from '../models/set.model';
 
 @Component({
-  selector: 'app-set-list',
-  templateUrl: './set-list.component.html',
-  styleUrls: ['./set-list.component.css']
+  selector: 'app-Set-list',
+  templateUrl: './Set-list.component.html',
+  styleUrls: ['./Set-list.component.css']
 })
 export class SetListComponent {
   @Input() childSetList: Set[];
