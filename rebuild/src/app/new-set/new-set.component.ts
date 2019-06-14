@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
+import { Set } from '../models/set.model';
 
 @Component({
   selector: 'app-new-set',
   templateUrl: './new-set.component.html',
   styleUrls: ['./new-set.component.css']
 })
-export class NewSetComponent implements OnInit {
+export class NewSetComponent {
+  @Output() sendSet = new EventEmitter();
 
-  constructor() { }
-
-  ngOnInit() {
+  submitForm(name: string, number: string, ageRange: string, pieces: string, packaging: string, year: string, retailPrice: string, availability: string, type: string, themeGroup: string, theme: string, subTheme: string, tags: string) {
+    let newSet: Set = new Set(name, parseInt(number), type, themeGroup, theme, subTheme, parseInt(year), tags, parseInt(pieces), parseInt(retailPrice), ageRange, packaging, availability);
+    this.sendSet.emit(newSet);
   }
-
 }

@@ -1,3 +1,34 @@
-<p>
-  new-set works!
-</p>
+<h2>Add New Set</h2>
+
+<label>Set Name:</label>
+<input #name>
+<label>Set Number:</label>
+<input #number>
+<label>Age Range:</label>
+<input #ageRange>
+<label>Piece Count:</label>
+<input #pieces>
+<label>Packaging:</label>
+<input #packaging>
+
+<label>Year Released:</label>
+<input #year>
+<label>Retail Price:</label>
+<input #retailPrice>
+<label>Availability:</label>
+<input #availability>
+
+<label>Type:</label>
+<input #type>
+
+<label>Theme Group:</label>
+<input #themeGroup>
+<label>Theme:</label>
+<input #theme>
+<label>Subtheme:</label>
+<input #subTheme>
+
+<label>Tags:</label>
+<input #tags>
+
+ <button (click)="submitForm(name.value, number.value, ageRange.value, pieces.value, packaging.value, year.value, retailPrice.value, availability.value, type.value, themeGroup.value, theme.value, subTheme.value, tags.value); name.value '', number.value = '', ageRange.value = '', pieces.value = '', packaging.value = '', year.value = '', retailPrice.value = '', availability.value = '', type.value = '', themeGroup.value = '', theme.value = '', subTheme.value = '', tags.value = '';">Add</button>

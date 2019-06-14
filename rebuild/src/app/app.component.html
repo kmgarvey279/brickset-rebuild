@@ -1,5 +1,5 @@
 <h1>Brickset-Clone</h1>
 <h3>{{currentFocus}}</h3>
-<ul>
-  <li *ngFor="let currentSet of sets">{{currentSet.name}}</li>
-</ul>
+<app-Set-list [childSetList]="masterSetList" (clickSender)="editSet($event)"></app-Set-list>
+<app-edit-Set [childSelectedSet]="selectedSet" (clickedDone)="finishedEditing()"></app-edit-Set>
+<app-new-Set (sendSet)="addKeg($event)"></app-new-Set>
