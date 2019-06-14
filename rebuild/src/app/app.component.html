@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar-top navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href='#'><img src="./assets/img/logo-2x.png" weight=100px height=100px></a>
@@ -54,3 +54,54 @@
   <app-edit-Set [childSelectedSet]="selectedSet" (clickedDone)="finishedEditing()"></app-edit-Set>
   <app-new-Set (sendSet)="addKeg($event)"></app-new-Set>
 </div>
+
+<nav class="navbar-top navbar-default">
+  <div class="container-fluid">
+    <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Name">
+        <input type="text" class="form-control" placeholder="Email">
+        <input type="text" class="form-control" placeholder="Message">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">Send Message</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="row">
+    <div class="col-md-1">
+      <p>Frequently Asked Questions</p>
+    </div>
+    <div class="col-md-1">
+      <p>|</p>
+    </div>
+    <div class="col-md-1">
+      <p>About Brickset</p>
+    </div>
+    <div class="col-md-1">
+      <p>|</p>
+    </div>
+    <div class="col-md-1">
+      <p>Privacy and Cookies</p>
+    </div>
+    <div class="col-md-1">
+      <p>|</p>
+    </div>
+    <div class="col-md-1">
+      <p>Affiliate Marketing Disclosure</p>
+    </div>
+    <div class="col-md-1">
+      <p>|</p>
+    </div>
+    <div class="col-md-1">
+      <p>Site Map</p>
+    </div>
+    <div class="col-md-1">
+      <p>|</p>
+    </div>
+    <div class="col-md-1">
+      <p>Contact Us</p>
+    </div>
+  </div>
+  <p>LEGO, the LEGO logo, the Minifigure, and the Brick and Knob configurations are trademarks of the LEGO Group of Companies. ©2019 The LEGO Group.Brickset, the Brickset logo and all content not covered by The LEGO Group's copyright is, unless otherwise stated, ©1997-2019 Brickset ltd.</p>
+</nav>
