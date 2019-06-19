@@ -3,6 +3,12 @@
   margin-bottom: 10px;
 }
 
+.navbar-bottom {
+  background-color: lightgray;
+  height: 100px;
+  bottom: 0;
+}
+
 #log-in {
   position: absolute;
   top: 0px;

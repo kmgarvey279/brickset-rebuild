@@ -1,0 +1,36 @@
+<h2>Edit Set Details</h2>
+
+<label>Set Name:</label>
+<input [(ngModel)]="selectedSet.name">
+<label>Set Number:</label>
+<input [(ngModel)]="selectedSet.number">
+<label>Age Range:</label>
+<input [(ngModel)]="selectedSet.ageRange">
+<label>Piece Count:</label>
+<input [(ngModel)]="selectedSet.pieces">
+<label>Packaging:</label>
+<input [(ngModel)]="selectedSet.packaging">
+
+<label>Year Released:</label>
+<input [(ngModel)]="selectedSet.year">
+<label>Retail Price:</label>
+<input [(ngModel)]="selectedSet.retailPrice">
+<label>Availability:</label>
+<input [(ngModel)]="selectedSet.availability">
+
+<label>Type:</label>
+<input [(ngModel)]="selectedSet.type">
+
+<label>Theme Group:</label>
+<input [(ngModel)]="selectedSet.themeGroup">
+<label>Theme:</label>
+<input [(ngModel)]="selectedSet.theme">
+<label>Subtheme:</label>
+<input [(ngModel)]="selectedSet.subTheme">
+
+<label>Tags:</label>
+<input [(ngModel)]="selectedSet.tags">
+
+<button (click)="beginUpdatingSet(selectedSet)">Update</button>
+<hr>
+<button (click)="beginDeletingSet(selectedSet)">Delete</button>

@@ -1,0 +1,15 @@
+.card-header {
+  background-color: blue;
+  color: white;
+}
+
+.card-body {
+  background-color: darkgray;
+  color: lightgray;
+}
+
+#float-wrap {
+  float:right;
+  width: 350px;
+  margin-left: 20px;
+}

@@ -1,0 +1,58 @@
+{ "sets": [{
+    "name": "Test Pirate Ship",
+    "number": 2711,
+    "type": "Normal",
+    "themeGroup": "Action/Adventure",
+    "theme": "Pirates",
+    "subTheme": "Zombie Pirates",
+    "yearReleased": 2019,
+    "tags": "Zombie Pirate Ship Adventure",
+    "pieces": 502,
+    "retailPrice": 60.00,
+    "ageRange": "7-12",
+    "packaging": "Box",
+    "availability": "Retail"
+    }, {
+    "name": "Test Spaceship",
+    "number": 3322,
+    "type": "Other",
+    "themeGroup": "Action/Adventure",
+    "theme": "Space",
+    "subTheme": "Space Truckers",
+    "yearReleased": 2018,
+    "tags": "Space Trucker Ship Adventure",
+    "pieces": 438,
+    "retailPrice": 45.00,
+    "ageRange": "7-12",
+    "packaging": "Box",
+    "availability": "Retail"
+    }, {
+    "name": "Test Cafe",
+    "number": 2913,
+    "type": "Normal",
+    "themeGroup": "Present Day",
+    "theme": "Creator Expert",
+    "subTheme": "Modular Buildings",
+    "yearReleased": 2017,
+    "tags": "City Cafe Modular Expert",
+    "pieces": 2302,
+    "retailPrice": 160.00,
+    "ageRange": "12+",
+    "packaging": "Box",
+    "availability": "Exclusive"
+    }, {
+    "name": "Test Castle",
+    "number": 2523,
+    "type": "Normal",
+    "themeGroup": "Action/Adventure",
+    "theme": "Castle",
+    "subTheme": "Dark Knights",
+    "yearReleased": 2018,
+    "tags": "Castle, Knights",
+    "pieces": 1002,
+    "retailPrice": 100.00,
+    "ageRange": "12+",
+    "packaging": "Box",
+    "availability": "Exclusive"
+  }]
+}

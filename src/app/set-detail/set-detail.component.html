@@ -1,0 +1,219 @@
+<h5>Home > Browse > Sets > {{setToDisplay?.themeGroup}} > {{setToDisplay?.theme}} > {{setToDisplay?.number}}:{{setToDisplay?.name}}
+
+  <div class="container">
+    <div id="float-wrap">
+    <div class="card">
+      <div class="card-header">SET DETAILS</div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm">
+            <p>SET NUMBER</p>
+          </div>
+          <div class="col-sm">
+            <p>{{setToDisplay?.number}}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <p>NAME</p>
+          </div>
+          <div class="col-sm">
+            <p>{{setToDisplay?.name}}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <p>SET TYPE</p>
+          </div>
+          <div class="col-sm">
+            <p>{{setToDisplay?.type}}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <p>THEME GROUP</p>
+          </div>
+          <div class="col-sm">
+            <p>{{setToDisplay?.themeGroup}}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <p>THEME</p>
+          </div>
+          <div class="col-sm">
+            <p>{{setToDisplay?.theme}}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <p>SUBTHEME</p>
+          </div>
+          <div class="col-sm">
+            <p>{{setToDisplay?.subTheme}}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <p>YEAR RELEASED</p>
+          </div>
+          <div class="col-sm">
+            <p>{{setToDisplay?.yearReleased}}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <p>TAGS</p>
+          </div>
+          <div class="col-sm">
+            <p>{{setToDisplay?.tags}}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <p>PIECES</p>
+          </div>
+          <div class="col-sm">
+            <p>{{setToDisplay?.pieces}}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <p>MINIFIGURES</p>
+          </div>
+          <div class="col-sm">
+            <p>placeholder</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <p>RRP</p>
+          </div>
+          <div class="col-sm">
+            <p>{{setToDisplay?.retailPrice}}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <p>CURRENT VALUE</p>
+          </div>
+          <div class="col-sm">
+            <p>{{setToDisplay?.currentValue}}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <p>PRICE PER PIECE</p>
+          </div>
+          <div class="col-sm">
+            <p>placeholder</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <p>RATING</p>
+          </div>
+          <div class="col-sm">
+            <p>placeholder</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <p>YOUR RATING</p>
+          </div>
+          <div class="col-sm">
+            <p>placeholder</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="card">
+      <div class="card-header">COLLECTIONS</div>
+      <div class="card-body">
+      </div>
+    </div>
+    <br>
+
+    <div class="card">
+      <div class="card-header">BRICK INSIGHTS RATNG</div>
+      <div class="card-body">
+      </div>
+    </div>
+    <br>
+
+    <div class="card">
+      <div class="card-header">BUY AT BRICKLINK</div>
+      <div class="card-body">
+      </div>
+    </div>
+    <br>
+
+    <div class="card">
+      <div class="card-header">YOUR NOTES</div>
+      <div class="card-body">
+      </div>
+    </div>
+    <br>
+
+    <div class="card">
+      <div class="card-header">REBRICKABLE</div>
+      <div class="card-body">
+        <p>Want to see if you can build this set?</p>
+        <br>
+        <p>Enter your Rebrickable user details in your profile, or sign up.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <h2>{{setToDisplay?.number}}:{{setToDisplay?.name}}</h2>
+  <div class="card">
+    <h4>« »</h4>
+  </div>
+  <br>
+  <div class="card">
+    <h4>IMAGE</h4><h4>MINIFIGS</h4><h4>PARTS {{setToDisplay?.parts}}</h4>
+
+    <div class="show-image">
+      <p>@ {{setToDisplay?.yearReleased}} LEGO Group.</p>
+    </div>
+
+    <div class="show-minifigs">
+
+    </div>
+
+    <div class="show-parts">
+      <p>According to the set database, this set has <strong>{{setToDisplay?.pieces}}</strong> parts. The inventory from LEGO.com contains _ parts. This suggests that the inventory is _% complete.
+      <h4>View inventory as a table »</h4>
+      <h4>View inventory in parts list »</h4>
+      <h4>View inventory at BrickLink »</h4>
+      <div id="part-images">
+      </div>
+      <h4>View alternative inventory from Rebrickable.com »</h4>
+      <h6>This set inventory has been obtained from LEGO Customer Services replacement parts page. It may not be complete. We do not control this inventory and cannot currently make changes to it. Use it as a guide to the contents of the set, or to find out part numbers when requesting replacements.</h6>
+    </div>
+  </div>
+  <br>
+  <div class="card">
+    <h4>« »</h4>
+  </div>
+<br>
+<div class="card">
+  <div class="row">
+    <div class="col-md">
+      <h4>Buy it now on eBay</h4>
+      <span id="buy-now"></span>
+    </div>
+    <div class="col-md">
+      <h4>Auction lots on eBay</h4>
+      <span id="auctions"></span>
+    </div>
+  </div>
+  <p>View more matches at eBay »</p>
+  <br>
+  <h5>Can't find what you're looking for?</h5>
+  <br>
+  <h6>Search other eBay sites »</h6>
+</div>

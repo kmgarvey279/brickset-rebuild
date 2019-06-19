@@ -31,7 +31,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-2">
-      <h3><span id="browse-button">BROWSE</span></h3>
+      <a routerLink="set-list"><h3><span id="browse-button">BROWSE</span></h3></a>
     </div>
     <div class="col-md-2">
       <h3><span id="buy-button">BUY</span></h3>
@@ -49,13 +49,11 @@
       <h3><span id="my-menu-button">MY MENUS</span></h3>
     </div>
   </div>
-  <h3>{{currentFocus}}</h3>
-  <app-Set-list [childSetList]="masterSetList" (clickSender)="editSet($event)"></app-Set-list>
-  <app-edit-Set [childSelectedSet]="selectedSet" (clickedDone)="finishedEditing()"></app-edit-Set>
-  <app-new-Set (sendSet)="addKeg($event)"></app-new-Set>
+
+  <router-outlet></router-outlet>
 </div>
 
-<nav class="navbar-top navbar-default">
+<nav class="navbar-bottom">
   <div class="container-fluid">
     <form class="navbar-form navbar-left" action="/action_page.php">
       <div class="input-group">

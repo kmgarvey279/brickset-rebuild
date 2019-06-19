@@ -1,0 +1,91 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">New Post</h3>
+  </div>
+  <div>
+    <div>
+      <div>
+        <label>Name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Number:</label>
+        <br>
+        <input #newNumber>
+      </div>
+
+      <div>
+        <label>Type:</label>
+        <br>
+        <input #newType>
+      </div>
+
+      <div>
+        <label>Theme Group:</label>
+        <br>
+        <textarea #newThemeGroup></textarea>
+      </div>
+
+      <div>
+        <label>Theme:</label>
+        <br>
+        <textarea #newTheme></textarea>
+      </div>
+
+      <div>
+        <label>Sub-Theme:</label>
+        <br>
+        <textarea #newSubTheme></textarea>
+      </div>
+
+      <div>
+        <label>Year Released:</label>
+        <br>
+        <textarea #newYearReleased></textarea>
+      </div>
+
+      <div>
+        <label>Tags:</label>
+        <br>
+        <textarea #newTags></textarea>
+      </div>
+
+      <div>
+        <label>Pieces:</label>
+        <br>
+        <textarea #newPieces></textarea>
+      </div>
+
+      <div>
+        <label>Retail Price:</label>
+        <br>
+        <textarea #newRetailPrice></textarea>
+      </div>
+
+      <div>
+        <label>Age Range:</label>
+        <br>
+        <textarea #newAgeRange></textarea>
+      </div>
+
+      <div>
+        <label>Packaging</label>
+        <br>
+        <textarea #newPackaging></textarea>
+      </div>
+
+      <div>
+        <label>Availability:</label>
+        <br>
+        <textarea #newAvailability></textarea>
+      </div>
+      <button (click)="submitForm(newName.value, newNumber.value, newType.value, newThemeGroup.value, newTheme.value, newSubTheme.value, newYearReleased.value, newTags.value, newPieces.value, newRetailPrice.value, newAgeRange.value, newPackaging.value, newAvailability.value); newName.value=''; newNumber.value=''; newType.value=''; newThemeGroup.value=''; newTheme.value=''; newSubTheme.value=''; newYearReleased.value=''; newTags.value=''; newPieces.value=''; newRetailPrice.value=''; newAgeRange.value=''; newPackaging.value=''; newAvailability.value=''">Add</button>
+    </div>
+  </div>
+</div>
+
+<div>
+  <app-Set-list></app-Set-list>
+</div>

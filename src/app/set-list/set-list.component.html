@@ -1,0 +1,83 @@
+<h4>Home > Browse > Sets</h4>
+
+<select (change)="onChange($event.target.value)">
+  <option value="displayNone" selected="selected">THEME</option>
+  <option value="Space">Space</option>
+  <option value="Pirates">Pirates</option>
+  <option value="Creator Expert">Creator Expert</option>
+</select>
+<select (change)="onChange($event.target.value)">
+  <option value="displayNone" selected="selected">YEAR</option>
+  <option value=2019>2019</option>
+  <option value=2018>2018</option>
+  <option value=2017>2017</option>
+</select>
+<select (change)="onChange($event.target.value)">
+  <option value="displayNone" selected="selected">CATEGORY</option>
+  <option value="Random">Random</option>
+  <option value="Book">Book</option>
+  <option value="Normal">Normal</option>
+</select>
+
+<h2>Sets</h2>
+<p>Brickset is the most established, accurate and up-to-date LEGO database on the Internet today: we've been collating our data since 1997. Our database contains information on <strong>15876</strong> LEGO sets and other items released over the last <strong>69 years</strong>.</p>
+
+<h3>How to find sets</h3>
+<ul>
+  <li>Use the drop-down lists above to find the sets you're interested in</li>
+  <li>Type something into the search box</li>
+  <li>View lists of themes and years</li>
+  <li>View list of tags grouped by theme</li>
+  <li>Find sets containing specific minifig characters</li>
+  <li>View some random sets</li>
+</ul>
+
+<ul>
+  <li *ngFor="let set of sets | async | theme:filterByTheme" class="panel panel-default">
+    <div class="panel-body">
+      <h3 (click)="goToDetailPage(set)">{{set.number}}:{{set.name}}</h3><br>
+      <p><span id="tags">{{set.tags}}</span></p><br>
+      <p>PIECES {{set.pieces}}</p><br>
+      <p>RRP {{set.retailPrice}} | More</p><br>
+      <p>PPP {{set.getPartToPriceRatio}}</p><br>
+      <p>PACKAGING {{set.retailPrice}}</p><br>
+      <p>AVAILABILITY {{set.availability}}</p><br>
+      <p>FIRST SOLD {{set.yearReleased}}</p><br>
+      <p>INSTRUCTIONS {{set.getInstructions}}</p><br>
+      <p>ADDITIONAL IMAGES {{set.addImages}}</p><br>
+      <p>SET TYPE {{set.type}}</p>
+    </div>
+  </li>
+
+  <li *ngFor="let set of sets | async | year:filterByYear" class="panel panel-default">
+    <div class="panel-body">
+      <h3 (click)="goToDetailPage(set)">{{set.number}}:{{set.name}}</h3><br>
+      <p><span id="tags">{{set.tags}}</span></p><br>
+      <p>PIECES {{set.pieces}}</p><br>
+      <p>RRP {{set.retailPrice}} | More</p><br>
+      <p>PPP {{set.getPartToPriceRatio}}</p><br>
+      <p>PACKAGING {{set.retailPrice}}</p><br>
+      <p>AVAILABILITY {{set.availability}}</p><br>
+      <p>FIRST SOLD {{set.yearReleased}}</p><br>
+      <p>INSTRUCTIONS {{set.getInstructions}}</p><br>
+      <p>ADDITIONAL IMAGES {{set.addImages}}</p><br>
+      <p>SET TYPE {{set.type}}</p>
+    </div>
+  </li>
+
+  <li *ngFor="let set of sets | async | category:filterByCategory" class="panel panel-default">
+    <div class="panel-body">
+      <h3 (click)="goToDetailPage(set)">{{set.number}}:{{set.name}}</h3><br>
+      <p><span id="tags">{{set.tags}}</span></p><br>
+      <p>PIECES {{set.pieces}}</p><br>
+      <p>RRP {{set.retailPrice}} | More</p><br>
+      <p>PPP {{set.getPartToPriceRatio}}</p><br>
+      <p>PACKAGING {{set.retailPrice}}</p><br>
+      <p>AVAILABILITY {{set.availability}}</p><br>
+      <p>FIRST SOLD {{set.yearReleased}}</p><br>
+      <p>INSTRUCTIONS {{set.getInstructions}}</p><br>
+      <p>ADDITIONAL IMAGES {{set.addImages}}</p><br>
+      <p>SET TYPE {{set.type}}</p>
+    </div>
+  </li>
+</ul>
