@@ -1,13 +1,16 @@
-<nav class="navbar-top navbar-default">
-  <div class="container-fluid">
+<div class="container-fluid">
+  <nav class="navbar-top navbar-default">
     <div class="navbar-header">
       <a class="navbar-brand" href='#'><img src="./assets/img/logo-2x.png" weight=100px height=100px></a>
-        <div id="log-in">
-          <a href="#">Login</a>  <a href="#">Sign Up</a>
-        </div>
     </div>
-    <form class="navbar-form navbar-left" action="/action_page.php">
-      <div class="input-group">
+    <div id="log-in">
+      <a href="#">Login</a>
+    </div>
+    <div id="sign-up">
+      <a href="#">Sign Up</a>
+    </div>
+    <form class="navbar-form-top navbar-left" action="/action_page.php">
+      <div class="input-group" id="search-bar">
         <input type="text" class="form-control" placeholder="Search">
         <select>
           <option value="all" selected="selected">All</option>
@@ -25,81 +28,80 @@
         </div>
       </div>
     </form>
+    <br>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="card" id="browse-button">
+          <a routerLink="set-list" class="stretched-link">BROWSE</a>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card" id="buy-button">
+          <a routerLink="#" class="stretched-link">BUY</a>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card" id="my-sets-button">
+          <a routerLink="#" class="stretched-link">MY SETS</a>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card" id="forum-button">
+          <a routerLink="#" class="stretched-link">FORUM</a>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card" id="more-button">
+          <a routerLink="#" class="stretched-link">MORE...</a>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card" id="my-menu-button">
+          <a routerLink="#" class="stretched-link">MY MENUS</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="outlet">
+    <router-outlet></router-outlet>
   </div>
-</nav>
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-2">
-      <a routerLink="set-list"><h3><span id="browse-button">BROWSE</span></h3></a>
-    </div>
-    <div class="col-md-2">
-      <h3><span id="buy-button">BUY</span></h3>
-    </div>
-    <div class="col-md-2">
-      <h3><span id="my-sets-button">MY SETS</span></h3>
-    </div>
-    <div class="col-md-2">
-      <h3><span id="forum-button">FORUM</span></h3>
-    </div>
-    <div class="col-md-2">
-      <h3><span id="more-button">MORE...</span></h3>
-    </div>
-    <div class="col-md-2">
-      <h3><span id="my-menu-button">MY MENUS</span></h3>
-    </div>
-  </div>
-
-  <router-outlet></router-outlet>
 </div>
 
 <nav class="navbar-bottom">
   <div class="container-fluid">
-    <form class="navbar-form navbar-left" action="/action_page.php">
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Name">
-        <input type="text" class="form-control" placeholder="Email">
-        <input type="text" class="form-control" placeholder="Message">
-        <div class="input-group-btn">
-          <button class="btn btn-default" type="submit">Send Message</button>
-        </div>
+    <div class="row">
+      <div class="col-lg">
+        <h3>Site Statistics</h3>
+        <ul>
+          <li>There are 15879 items in the Brickset database.</li>
+          <li>Brickset members have written 35025 set reviews.</li>
+          <li>7386 members have logged in in the last 24 hours, 15940 in the last 7 days, 25616 in the last month.</li>
+          <li>451 people have joined this week. There are now 204988 members.</li>
+          <li>Between us we own 22,017,986 sets worth at least US$625,321,556 and containing 6,076,904,053 pieces</li>
+        </ul>
       </div>
-    </form>
-  </div>
-  <div class="row">
-    <div class="col-md-1">
-      <p>Frequently Asked Questions</p>
+      <div class=col-lg>
+        <h4>Get in touch</h4>
+          <p>If you have LEGO news, new images or something else to tell us about, send us a message. If you have a lot to tell us, use this contact form.</p>
+          <form>
+            <div class="input-group">
+              <div class="col-md">
+                <input type="text" class="form-control" placeholder="Name">
+                <input type="text" class="form-control" placeholder="Email">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit">Send Message</button>
+                </div>
+              </div>
+              <div class="col-md">
+                <input type="text" class="form-control" placeholder="Message">
+              </div>
+            </div>
+          </form>
+      </div>
     </div>
-    <div class="col-md-1">
-      <p>|</p>
-    </div>
-    <div class="col-md-1">
-      <p>About Brickset</p>
-    </div>
-    <div class="col-md-1">
-      <p>|</p>
-    </div>
-    <div class="col-md-1">
-      <p>Privacy and Cookies</p>
-    </div>
-    <div class="col-md-1">
-      <p>|</p>
-    </div>
-    <div class="col-md-1">
-      <p>Affiliate Marketing Disclosure</p>
-    </div>
-    <div class="col-md-1">
-      <p>|</p>
-    </div>
-    <div class="col-md-1">
-      <p>Site Map</p>
-    </div>
-    <div class="col-md-1">
-      <p>|</p>
-    </div>
-    <div class="col-md-1">
-      <p>Contact Us</p>
-    </div>
+  <div id="bottom-nav-links">
+     <pre><a href="#">Frequently Asked Questions</a> | <a href="#">About Brickset</a> | <a href="#">Privacy and Cookies</a> | <a href="#">Affiliate Marketing Disclosure</a> | <a href="#">Site Map</a> | <a href="#">Contact Us</a></pre>
   </div>
   <p>LEGO, the LEGO logo, the Minifigure, and the Brick and Knob configurations are trademarks of the LEGO Group of Companies. ©2019 The LEGO Group.Brickset, the Brickset logo and all content not covered by The LEGO Group's copyright is, unless otherwise stated, ©1997-2019 Brickset ltd.</p>
+</div>
 </nav>

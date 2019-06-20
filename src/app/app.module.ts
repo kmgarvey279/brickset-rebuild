@@ -17,6 +17,7 @@ import { routing } from './app.routing';
 import { ThemePipe } from './theme.pipe';
 import { CategoryPipe } from './category.pipe';
 import { YearPipe } from './year.pipe';
+import { BrowseComponent } from './browse/browse.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -37,7 +38,8 @@ export const firebaseConfig = {
     DeleteSetComponent,
     AdminComponent,
     SetDetailComponent,
-    HomeComponent
+    HomeComponent,
+    BrowseComponent
   ],
   imports: [
     BrowserModule,

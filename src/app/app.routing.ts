@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { SetListComponent } from './Set-list/Set-list.component';
 import { SetDetailComponent } from './set-detail/set-detail.component';
 import { AdminComponent } from './admin/admin.component';
+import { BrowseComponent } from './browse/browse.component';
 
 const appRoutes: Routes = [
   {
@@ -21,6 +22,10 @@ const appRoutes: Routes = [
   {
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path: 'browse',
+    component: BrowseComponent
   }
 ];
 

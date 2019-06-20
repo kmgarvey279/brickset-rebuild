@@ -1,46 +1,149 @@
+#outlet {
+  padding-top: 85px;
+  padding-bottom: 75px;
+}
+
 .navbar-top {
   background-color: lightgray;
-  margin-bottom: 10px;
+  height: 110px;
 }
 
 .navbar-bottom {
   background-color: lightgray;
-  height: 100px;
+  width: 100%;
   bottom: 0;
+}
+
+#search-bar {
+  position: absolute;
+  border-radius: 25px;
+  top: 50px;
+  right: 20px;
+  width: 350px;
+}
+
+#bottom-nav-links {
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+}
+
+#search-bar input {
+  border-radius: 25px;
+  border: 1px;
+  z-index: 1;
+  right: -30px;
+}
+
+#search-bar select {
+  border-radius: 25px;
+  border: 1px;
+  z-index: 2;
 }
 
 #log-in {
   position: absolute;
-  top: 0px;
-  right: 60px;
+  top: 15px;
+  left: 1050px;
+}
+
+#sign-up {
+  position: absolute;
+  top: 15px;
+  left: 1100px;
 }
 
 #browse-button {
   background-color: lightgreen;
   color: white;
+  border-radius: 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: height 0.5s;
+}
+#browse-button:hover {
+  height: 60px;
 }
 
 #buy-button {
   background-color: green;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  height: 40px;
+  transition: height 0.5s;
+}
+#buy-button:hover {
+  height: 60px;
 }
 
 #my-sets-button {
   background-color: lightblue;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  height: 40px;
+  transition: height 0.5s;
+}
+#my-sets-button:hover {
+  height: 60px;
 }
 
 #forum-button {
   background-color: blue;
-  color: white;
+  border-radius: 0;
+  height: 40px;
+  transition: height 0.5s;
+}
+#forum-button:hover {
+  height: 60px;
 }
 
 #more-button {
   background-color: orange;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  height: 40px;
+  transition: height 0.5s;
+}
+#more-button:hover {
+  height: 60px;
 }
 
 #my-menu-button {
   background-color: red;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 0;
+  height: 40px;
+  transition: height 0.5s;
+}
+#my-menu-button:hover {
+  height: 60px;
+}
+
+.stretched-link {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-decoration:none;
 }
