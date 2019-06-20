@@ -1,17 +1,22 @@
 #outlet {
-  padding-top: 85px;
+  padding-top: 10px;
   padding-bottom: 75px;
 }
 
 .navbar-top {
   background-color: lightgray;
-  height: 110px;
 }
 
 .navbar-bottom {
   background-color: lightgray;
   width: 100%;
   bottom: 0;
+}
+
+.top-links {
+  top: 10px;
+  right: 10px;
+  position: absolute;
 }
 
 #search-bar {
@@ -24,7 +29,6 @@
 
 #bottom-nav-links {
   white-space: nowrap;
-
   text-align: center;
 }
 
@@ -41,13 +45,9 @@
   z-index: 2;
 }
 
-#admin {
-  position: absolute;
-  top: 15px;
-  left: 900px;
-}
 
-#log-in {
+
+/* #log-in {
   position: absolute;
   top: 15px;
   left: 1050px;
@@ -57,13 +57,15 @@
   position: absolute;
   top: 15px;
   left: 1100px;
-}
+} */
+
+
 
 #browse-button {
   background-color: lightgreen;
   color: white;
   border-radius: 0;
-  height: 40px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,7 +82,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 0;
-  height: 40px;
+  height: 50px;
   transition: height 0.5s;
 }
 #buy-button:hover {
@@ -94,7 +96,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 0;
-  height: 40px;
+  height: 50px;
   transition: height 0.5s;
 }
 #my-sets-button:hover {
@@ -104,7 +106,7 @@
 #forum-button {
   background-color: blue;
   border-radius: 0;
-  height: 40px;
+  height: 50px;
   transition: height 0.5s;
 }
 #forum-button:hover {
@@ -118,7 +120,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 0;
-  height: 40px;
+  height: 50px;
   transition: height 0.5s;
 }
 #more-button:hover {
@@ -134,7 +136,7 @@
   white-space: nowrap;
   overflow: hidden;
   border-radius: 0;
-  height: 40px;
+  height: 50px;
   transition: height 0.5s;
 }
 #my-menu-button:hover {

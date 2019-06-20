@@ -1,4 +1,6 @@
-<h6><a routerLink="/">Home</a> > <a routerLink="browse">Browse</a> > Sets</h6>
+<div class="location">
+  <h6><a routerLink="/">Home</a> > <span id="previous-page" (click)="return()">Browse</span> > Sets</h6>
+</div>
 <br>
 <div class="row">
   <div class="col-md">
@@ -6,23 +8,23 @@
   </div>
   <div class="col-md">
     <ul>
-      <li><a routerLink="#">System</a></li>
-      <li><a routerLink="#">Space</a></li>
-      <li><a routerLink="#">Castle</a></li>
-      <li><a routerLink="#">Pirates</a></li>
+      <li><p (click)="showResults('System')">System</p></li>
+      <li><p (click)="showResults('Space')">Space</p></li>
+      <li><p (click)="showResults('Castle')">Castle</p></li>
+      <li><p (click)="showResults('Pirates')">Pirates</p></li>
     </ul>
   </div>
   <div class="col-md">
     <ul>
-      <li><a routerLink="#">Western</a></li>
-      <li><a routerLink="#">Friends</a></li>
-      <li><a routerLink="#">Star Wars</a></li>
-      <li><a routerLink="#">The Lego Movie</a></li>
+      <li><p (click)="showResults('Western')">Western</p></li>
+      <li><p (click)="showResults('Friends')">Friends</p></li>
+      <li><p (click)="showResults('Star Wars')">Star Wars</p></li>
+      <li><p (click)="showResults('The Lego Movie')">The Lego Movie</p></li>
     </ul>
   </div>
   <div class="col-md">
     <ul>
-      <li><a routerLink="#">Creator Expert</a></li>
+      <li><p (click)="showResults('Creator Expert')">Creator Expert</p></li>
     </ul>
   </div>
 </div>
@@ -35,42 +37,76 @@
   </div>
   <div class="col-md">
     <ul>
-      <li><a routerLink="#">2019</a></li>
-      <li><a routerLink="#">2018</a></li>
-      <li><a routerLink="#">2017</a></li>
-      <li><a routerLink="#">2016</a></li>
+      <li><p (click)="showResults(2019)">2019</p></li>
+      <li><p (click)="showResults(2018)">2018</p></li>
+      <li><p (click)="showResults(2017)">2017</p></li>
+      <li><p (click)="showResults(2016)">2016</p></li>
     </ul>
   </div>
   <div class="col-md">
     <ul>
-      <li><a routerLink="#">2015</a></li>
-      <li><a routerLink="#">2014</a></li>
-      <li><a routerLink="#">2013</a></li>
-      <li><a routerLink="#">2012</a></li>
+      <li><p (click)="showResults(2015)">2015</p></li>
+      <li><p (click)="showResults(2014)">2014</p></li>
+      <li><p (click)="showResults(2013)">2013</p></li>
+      <li><p (click)="showResults(2012)">2012</p></li>
     </ul>
   </div>
   <div class="col-md">
     <ul>
-      <li><a routerLink="#">2011</a></li>
-      <li><a routerLink="#">2010</a></li>
-      <li><a routerLink="#">2009</a></li>
-      <li><a routerLink="#">2008</a></li>
+      <li><p (click)="showResults(2011)">2011</p></li>
+      <li><p (click)="showResults(2010)">2010</p></li>
+      <li><p (click)="showResults(2009)">2009</p></li>
+      <li><p (click)="showResults(2008)">2008</p></li>
     </ul>
   </div>
   <div class="col-md">
     <ul>
-      <li><a routerLink="#">2007</a></li>
-      <li><a routerLink="#">2006</a></li>
-      <li><a routerLink="#">2005</a></li>
-      <li><a routerLink="#">2004</a></li>
+      <li><p (click)="showResults(2007)">2007</p></li>
+      <li><p (click)="showResults(2006)">2006</p></li>
+      <li><p (click)="showResults(2005)">2005</p></li>
+      <li><p (click)="showResults(2004)">2004</p></li>
     </ul>
   </div>
   <div class="col-md">
     <ul>
-      <li><a routerLink="#">2003</a></li>
-      <li><a routerLink="#">2002</a></li>
-      <li><a routerLink="#">2001</a></li>
-      <li><a routerLink="#">2000</a></li>
+      <li><p (click)="showResults(2003)">2003</p></li>
+      <li><p (click)="showResults(2002)">2002</p></li>
+      <li><p (click)="showResults(2001)">2001</p></li>
+      <li><p (click)="showResults(2000)">2000</p></li>
     </ul>
   </div>
 </div>
+
+<ul>
+  <li *ngFor="let set of sets | async | theme:filterByTheme" class="panel panel-default">
+    <div class="panel-body">
+      <h3 (click)="goToDetailPage(set)">{{set.number}}:{{set.name}}</h3><br>
+      <p><span id="tags">{{set.tags}}</span></p><br>
+      <p>PIECES {{set.pieces}}</p><br>
+      <p>RRP {{set.retailPrice}} | More</p><br>
+      <p>PPP {{set.getPartToPriceRatio}}</p><br>
+      <p>PACKAGING {{set.packaging}}</p><br>
+      <p>AVAILABILITY {{set.availability}}</p><br>
+      <p>FIRST SOLD {{set.yearReleased}}</p><br>
+      <p>INSTRUCTIONS {{set.getInstructions}}</p><br>
+      <p>ADDITIONAL IMAGES {{set.addImages}}</p><br>
+      <p>SET TYPE {{set.type}}</p>
+    </div>
+  </li>
+
+  <li *ngFor="let set of sets | async | year:filterByYear" class="panel panel-default">
+    <div class="panel-body">
+      <h3 (click)="goToDetailPage(set)">{{set.number}}:{{set.name}}</h3><br>
+      <p><span id="tags">{{set.tags}}</span></p><br>
+      <p>PIECES {{set.pieces}}</p><br>
+      <p>RRP {{set.retailPrice}} | More</p><br>
+      <p>PPP {{set.getPartToPriceRatio}}</p><br>
+      <p>PACKAGING {{set.packaging}}</p><br>
+      <p>AVAILABILITY {{set.availability}}</p><br>
+      <p>FIRST SOLD {{set.yearReleased}}</p><br>
+      <p>INSTRUCTIONS {{set.getInstructions}}</p><br>
+      <p>ADDITIONAL IMAGES {{set.addImages}}</p><br>
+      <p>SET TYPE {{set.type}}</p>
+    </div>
+  </li>
+</ul>

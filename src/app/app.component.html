@@ -1,17 +1,20 @@
-<div class="container-fluid">
   <nav class="navbar-top navbar-default">
+    <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href='#'><img src="./assets/img/logo-2x.png" weight=100px height=100px></a>
     </div>
-    <div id="admin">
-      <a href="admin">Admin Functions</a>
+    <div class="top-links">
+      <a href="my-sets">SETS</a>
+      <a href="my-wanted">WANTED</a>
+      <a href="my-minifigures">MINIFIGS</a>
+      <a href="admin">ADMIN FUNCTIONS</a>
     </div>
-    <div id="log-in">
+    <!-- <div id="log-in">
       <a href="#">Login</a>
     </div>
     <div id="sign-up">
       <a href="#">Sign Up</a>
-    </div>
+    </div> -->
     <form class="navbar-form-top navbar-left" action="/action_page.php">
       <div class="input-group" id="search-bar">
         <input type="text" class="form-control" placeholder="Search">
@@ -31,44 +34,46 @@
         </div>
       </div>
     </form>
-    <br>
-    <div class="row">
-      <div class="col-md-2">
-        <div class="card" id="browse-button">
-          <a routerLink="browse" class="stretched-link">BROWSE</a>
-        </div>
-      </div>
-      <div class="col-md-2">
-        <div class="card" id="buy-button">
-          <a routerLink="#" class="stretched-link">BUY</a>
-        </div>
-      </div>
-      <div class="col-md-2">
-        <div class="card" id="my-sets-button">
-          <a routerLink="#" class="stretched-link">MY SETS</a>
-        </div>
-      </div>
-      <div class="col-md-2">
-        <div class="card" id="forum-button">
-          <a routerLink="#" class="stretched-link">FORUM</a>
-        </div>
-      </div>
-      <div class="col-md-2">
-        <div class="card" id="more-button">
-          <a routerLink="#" class="stretched-link">MORE...</a>
-        </div>
-      </div>
-      <div class="col-md-2">
-        <div class="card" id="my-menu-button">
-          <a routerLink="#" class="stretched-link">MY MENUS</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <div id="outlet">
-    <router-outlet></router-outlet>
   </div>
-</div>
+</nav>
+    <br>
+
+    <div class="container" id="outlet">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="card" id="browse-button">
+            <a routerLink="browse" class="stretched-link">BROWSE</a>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card" id="buy-button">
+            <a routerLink="#" class="stretched-link">BUY</a>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card" id="my-sets-button">
+            <a routerLink="my-collection" class="stretched-link">MY SETS</a>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card" id="forum-button">
+            <a routerLink="#" class="stretched-link">FORUM</a>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card" id="more-button">
+            <a routerLink="#" class="stretched-link">MORE...</a>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card" id="my-menu-button">
+            <a routerLink="#" class="stretched-link">MY MENUS</a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <router-outlet></router-outlet>
+    </div>
 
 <nav class="navbar-bottom">
   <div class="container-fluid">

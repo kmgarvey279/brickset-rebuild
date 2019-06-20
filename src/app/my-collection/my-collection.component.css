@@ -1,0 +1,25 @@
+.divider {
+  border-bottom: 5px dotted darkgray;
+  width: 100%
+}
+
+.card-header {
+  background-color: blue;
+  color: white;
+}
+
+li {
+  color: blue;
+}
+
+#inner {
+  background-color: gray;
+}
+
+#outer {
+  background-color: whitesmoke;
+}
+
+p {
+  color: white;
+}

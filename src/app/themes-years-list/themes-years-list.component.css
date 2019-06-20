@@ -2,3 +2,11 @@
   border-bottom: 5px dotted lightgray;
   width: 100%
 }
+
+.location a {
+  color: black;
+}
+
+.panel-body {
+  background-color: lightgray;
+}

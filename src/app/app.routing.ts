@@ -6,6 +6,7 @@ import { SetDetailComponent } from './set-detail/set-detail.component';
 import { AdminComponent } from './admin/admin.component';
 import { BrowseComponent } from './browse/browse.component';
 import { ThemesYearsListComponent } from './themes-years-list/themes-years-list.component';
+import { MyCollectionComponent } from './my-collection/my-collection.component';
 
 const appRoutes: Routes = [
   {
@@ -31,6 +32,10 @@ const appRoutes: Routes = [
   {
     path: 'browse/themes-years-list',
     component: ThemesYearsListComponent
+  },
+  {
+    path: 'my-collection',
+    component: MyCollectionComponent
   }
 ];
 
