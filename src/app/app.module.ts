@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+
 import { AppComponent } from './app.component';
 import { SetListComponent } from './Set-list/Set-list.component';
 import { EditSetComponent } from './edit-Set/edit-Set.component';
@@ -13,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 import { routing } from './app.routing';
 import { ThemePipe } from './theme.pipe';
 import { CategoryPipe } from './category.pipe';
@@ -20,6 +22,7 @@ import { YearPipe } from './year.pipe';
 import { BrowseComponent } from './browse/browse.component';
 import { ThemesYearsListComponent } from './themes-years-list/themes-years-list.component';
 import { MyCollectionComponent } from './my-collection/my-collection.component';
+import { NewUserComponent } from './new-user/new-user.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -43,7 +46,8 @@ export const firebaseConfig = {
     HomeComponent,
     BrowseComponent,
     ThemesYearsListComponent,
-    MyCollectionComponent
+    MyCollectionComponent,
+    NewUserComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +55,8 @@ export const firebaseConfig = {
     HttpModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

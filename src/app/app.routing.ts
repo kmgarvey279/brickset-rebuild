@@ -7,6 +7,7 @@ import { AdminComponent } from './admin/admin.component';
 import { BrowseComponent } from './browse/browse.component';
 import { ThemesYearsListComponent } from './themes-years-list/themes-years-list.component';
 import { MyCollectionComponent } from './my-collection/my-collection.component';
+import { NewUserComponent } from './new-user/new-user.component';
 
 const appRoutes: Routes = [
   {
@@ -36,6 +37,10 @@ const appRoutes: Routes = [
   {
     path: 'my-collection',
     component: MyCollectionComponent
+  },
+  {
+    path: 'new-user',
+    component: NewUserComponent
   }
 ];
 
