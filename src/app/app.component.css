@@ -24,7 +24,7 @@
 
 #bottom-nav-links {
   white-space: nowrap;
-  overflow: hidden;
+
   text-align: center;
 }
 
@@ -39,6 +39,12 @@
   border-radius: 25px;
   border: 1px;
   z-index: 2;
+}
+
+#admin {
+  position: absolute;
+  top: 15px;
+  left: 900px;
 }
 
 #log-in {

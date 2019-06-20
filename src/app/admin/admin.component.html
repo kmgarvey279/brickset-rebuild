@@ -18,32 +18,85 @@
 
       <div>
         <label>Type:</label>
-        <br>
-        <input #newType>
+        <select #newType>
+          <option value="Random">Random</option>
+          <option value="Other">Other</option>
+          <option value="Normal">Gear</option>
+          <option value="Extended">2019</option>
+          <option value="Collection">2019</option>
+          <option value="Book">2019</option>
+        </select>
       </div>
 
       <div>
         <label>Theme Group:</label>
-        <br>
-        <textarea #newThemeGroup></textarea>
+        <select #newThemeGroup>
+          <option value="Action/Adventure">Action/Adventure</option>
+          <option value="Basic">Basic</option>
+          <option value="Constraction">Constraction</option>
+          <option value="Educational">Educational</option>
+          <option value="Girls">Girls</option>
+          <option value="Historical">Historical</option>
+          <option value="Licensed">Licensed</option>
+          <option value="Modern Day">Modern Day</option>
+          <option value="Other">Other</option>
+        </select>
       </div>
 
       <div>
         <label>Theme:</label>
-        <br>
-        <textarea #newTheme></textarea>
+        <select #newTheme>
+          <option value="System">System</option>
+          <option value="Space">Space</option>
+          <option value="Pirates">Pirates</option>
+          <option value="Castle">Castle</option>
+          <option value="Western">Western</option>
+          <option value="Friends">Friends</option>
+          <option value="Star Wars">Star Wars</option>
+          <option value="The Lego Movie">The Lego Movie</option>
+          <option value="Creator Expert">Creator Expert</option>
+        </select>
       </div>
 
       <div>
         <label>Sub-Theme:</label>
-        <br>
-        <textarea #newSubTheme></textarea>
+        <select #newSubTheme>
+          <option value="Classic Space">Classic Space</option>
+          <option value="Classic Castle">Classic Castle</option>
+          <option value="Classic Pirates">Classic Pirates</option>
+          <option value="Space Truckers">Space Truckers</option>
+          <option value="Zombie Pirates">Zombie Pirates</option>
+          <option value="Modular Buildings">Modular Buildings</option>
+          <option value="Star Wars Episode V">Star Wars Episode V/option>
+          <option value="Classic Western">Classic Western</option>
+          <option value="Haunted Castles">Haunted Castles</option>
+        </select>
       </div>
 
       <div>
-        <label>Year Released:</label>
-        <br>
-        <textarea #newYearReleased></textarea>
+        <label>Year Released</label>
+        <select #newYearReleased>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+          <option value="2014">2014</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
+          <option value="2011">2011</option>
+          <option value="2017">2010</option>
+          <option value="2017">2009</option>
+          <option value="2017">2008</option>
+          <option value="2017">2007</option>
+          <option value="2017">2006</option>
+          <option value="2017">2005</option>
+          <option value="2017">2004</option>
+          <option value="2017">2003</option>
+          <option value="2017">2002</option>
+          <option value="2017">2001</option>
+          <option value="2017">2000</option>
+        </select>
       </div>
 
       <div>
@@ -55,37 +108,42 @@
       <div>
         <label>Pieces:</label>
         <br>
-        <textarea #newPieces></textarea>
+        <input #newPieces>
       </div>
 
       <div>
         <label>Retail Price:</label>
         <br>
-        <textarea #newRetailPrice></textarea>
+        <input #newRetailPrice>
       </div>
 
       <div>
         <label>Age Range:</label>
         <br>
-        <textarea #newAgeRange></textarea>
+        <input #newAgeRange>
       </div>
 
       <div>
         <label>Packaging</label>
-        <br>
-        <textarea #newPackaging></textarea>
+        <select #newPackaging>
+          <option value="Box">Box</option>
+          <option value="Polybag">Polybag</option>
+          <option value="Other">Other</option>
+        </select>
       </div>
 
       <div>
         <label>Availability:</label>
-        <br>
-        <textarea #newAvailability></textarea>
+        <select #newAvailability>
+          <option value="Retail">Retail</option>
+          <option value="Exclusive">Exclusive</option>
+          <option value="Other">Other</option>
+        </select>
       </div>
       <button (click)="submitForm(newName.value, newNumber.value, newType.value, newThemeGroup.value, newTheme.value, newSubTheme.value, newYearReleased.value, newTags.value, newPieces.value, newRetailPrice.value, newAgeRange.value, newPackaging.value, newAvailability.value); newName.value=''; newNumber.value=''; newType.value=''; newThemeGroup.value=''; newTheme.value=''; newSubTheme.value=''; newYearReleased.value=''; newTags.value=''; newPieces.value=''; newRetailPrice.value=''; newAgeRange.value=''; newPackaging.value=''; newAvailability.value=''">Add</button>
     </div>
   </div>
 </div>
-
 <div>
   <app-Set-list></app-Set-list>
 </div>

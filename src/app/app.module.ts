@@ -18,6 +18,7 @@ import { ThemePipe } from './theme.pipe';
 import { CategoryPipe } from './category.pipe';
 import { YearPipe } from './year.pipe';
 import { BrowseComponent } from './browse/browse.component';
+import { ThemesYearsListComponent } from './themes-years-list/themes-years-list.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -39,7 +40,8 @@ export const firebaseConfig = {
     AdminComponent,
     SetDetailComponent,
     HomeComponent,
-    BrowseComponent
+    BrowseComponent,
+    ThemesYearsListComponent
   ],
   imports: [
     BrowserModule,

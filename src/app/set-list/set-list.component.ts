@@ -3,6 +3,7 @@ import { Set } from '../models/set.model';
 import { Router } from '@angular/router';
 import { SetService } from '../set.service';
 import { FirebaseListObservable } from 'angularfire2/database';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-Set-list',
@@ -17,7 +18,7 @@ export class SetListComponent implements OnInit {
   filterByYear: string = "displayNone";
   filterByCategory: string = "displayNone";
 
-  constructor(private router: Router, private setService: SetService){}
+  constructor(private router: Router, private setService: SetService, private location: Location){}
 
   ngOnInit(){
     this.sets = this.setService.getSets();
@@ -29,7 +30,7 @@ export class SetListComponent implements OnInit {
     this.filterByCategory = optionFromMenu;
   }
 
-  goToDetailPage(clickedSet){
-    this.router.navigate(['sets', clickedSet.$key]);
+  return() {
+    this.location.back();
   }
 }

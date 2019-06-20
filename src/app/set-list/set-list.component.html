@@ -1,58 +1,54 @@
-<h6><a routerLink="/">Home</a> > <a routerLink="browse">Browse</a> > Sets</h6>
+<div class="location">
+  <h6><a routerLink="/">Home</a> > <span id="previous-page" (click)="return()">Browse</span> > Sets</h6>
+</div>
 
 <select (change)="onChange($event.target.value)">
-  <option value="displayNone" selected="selected">THEME</option>
+  <option value="System">System</option>
   <option value="Space">Space</option>
   <option value="Pirates">Pirates</option>
+  <option value="Castle">Castle</option>
+  <option value="Western">Western</option>
+  <option value="Friends">Friends</option>
+  <option value="Star Wars">Star Wars</option>
+  <option value="The Lego Movie">The Lego Movie</option>
   <option value="Creator Expert">Creator Expert</option>
 </select>
 <select (change)="onChange($event.target.value)">
   <option value="displayNone" selected="selected">YEAR</option>
-  <option value=2019>2019</option>
-  <option value=2018>2018</option>
-  <option value=2017>2017</option>
+  <option value="2019">2019</option>
+  <option value="2018">2018</option>
+  <option value="2017">2017</option>
+  <option value="2016">2016</option>
+  <option value="2015">2015</option>
+  <option value="2014">2014</option>
+  <option value="2013">2013</option>
+  <option value="2012">2012</option>
+  <option value="2011">2011</option>
+  <option value="2017">2010</option>
+  <option value="2017">2009</option>
+  <option value="2017">2008</option>
+  <option value="2017">2007</option>
+  <option value="2017">2006</option>
+  <option value="2017">2005</option>
+  <option value="2017">2004</option>
+  <option value="2017">2003</option>
+  <option value="2017">2002</option>
+  <option value="2017">2001</option>
+  <option value="2017">2000</option>
 </select>
 <select (change)="onChange($event.target.value)">
   <option value="displayNone" selected="selected">CATEGORY</option>
   <option value="Random">Random</option>
-  <option value="Book">Book</option>
-  <option value="Normal">Normal</option>
+  <option value="Other">Other</option>
+  <option value="Normal">Gear</option>
+  <option value="Extended">Extended</option>
+  <option value="Collection">Collection</option>
+  <option value="Book">Books</option>
 </select>
 <br>
 <br>
 <h2>Sets</h2>
 <p>Brickset is the most established, accurate and up-to-date LEGO database on the Internet today: we've been collating our data since 1997. Our database contains information on <strong>15876</strong> LEGO sets and other items released over the last <strong>69 years</strong>.</p>
-
-<h3>How to find sets</h3>
-<ul>
-  <li>Use the drop-down lists above to find the sets you're interested in</li>
-  <li>Type something into the search box</li>
-  <li>View lists of themes and years</li>
-  <li>View list of tags grouped by theme</li>
-  <li>Find sets containing specific minifig characters</li>
-  <li>View some random sets</li>
-</ul>
-
-<h3>How to find sets</h3>
-<ul>
-  <li>Use the drop-down lists above to find the sets you're interested in</li>
-  <li>Type something into the search box</li>
-  <li>View lists of themes and years</li>
-  <li>View list of tags grouped by theme</li>
-  <li>Find sets containing specific minifig characters</li>
-  <li>View some random sets</li>
-</ul>
-
-<h3>How to find sets</h3>
-<ul>
-  <li>Use the drop-down lists above to find the sets you're interested in</li>
-  <li>Type something into the search box</li>
-  <li>View lists of themes and years</li>
-  <li>View list of tags grouped by theme</li>
-  <li>Find sets containing specific minifig characters</li>
-  <li>View some random sets</li>
-</ul>
-
 <h3>How to find sets</h3>
 <ul>
   <li>Use the drop-down lists above to find the sets you're interested in</li>
@@ -111,4 +107,5 @@
       <p>SET TYPE {{set.type}}</p>
     </div>
   </li>
+
 </ul>

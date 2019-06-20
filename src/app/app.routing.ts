@@ -5,6 +5,7 @@ import { SetListComponent } from './Set-list/Set-list.component';
 import { SetDetailComponent } from './set-detail/set-detail.component';
 import { AdminComponent } from './admin/admin.component';
 import { BrowseComponent } from './browse/browse.component';
+import { ThemesYearsListComponent } from './themes-years-list/themes-years-list.component';
 
 const appRoutes: Routes = [
   {
@@ -12,7 +13,7 @@ const appRoutes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'set-list',
+    path: 'browse/set-list',
     component: SetListComponent
   },
   {
@@ -26,6 +27,10 @@ const appRoutes: Routes = [
   {
     path: 'browse',
     component: BrowseComponent
+  },
+  {
+    path: 'browse/themes-years-list',
+    component: ThemesYearsListComponent
   }
 ];
 
