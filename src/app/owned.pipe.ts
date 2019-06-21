@@ -7,7 +7,7 @@ import { Set } from './models/set.model';
 })
 
 export class OwnedPipe implements PipeTransform {
-  transform(input: Set[]) {
+  transform(input: Set[], ownedSets) {
     var output: Set[] = [];
     for (let i = 0; i < input.length; i++) {
       if (input[i].ownIt == true) {

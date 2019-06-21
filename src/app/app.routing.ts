@@ -7,6 +7,8 @@ import { AdminComponent } from './admin/admin.component';
 import { BrowseComponent } from './browse/browse.component';
 import { ThemesYearsListComponent } from './themes-years-list/themes-years-list.component';
 import { MyCollectionComponent } from './my-collection/my-collection.component';
+import { MySetsComponent } from './my-sets/my-sets.component'
+import { WantedSetsComponent } from './wanted-sets/wanted-sets.component'
 
 const appRoutes: Routes = [
   {
@@ -36,6 +38,14 @@ const appRoutes: Routes = [
   {
     path: 'my-collection',
     component: MyCollectionComponent
+  },
+  {
+    path: 'my-sets',
+    component: MySetsComponent
+  },
+  {
+    path: 'my-wanted',
+    component: WantedSetsComponent
   }
 ];
 

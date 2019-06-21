@@ -7,7 +7,7 @@ import { Set } from './models/set.model';
 })
 
 export class WantedPipe implements PipeTransform {
-  transform(input: Set[]) {
+  transform(input: Set[], wantedSets) {
     var output: Set[] = [];
     for (let i = 0; i < input.length; i++) {
       if (input[i].wantIt == true) {

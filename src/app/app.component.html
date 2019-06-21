@@ -8,18 +8,18 @@
       <ul>
         <li *ngIf="isLoggedIn">
           <a>{{userName}}</a>
-          <a href="my-sets">SETS</a>
-          <a href="my-wanted">WANTED</a>
+          <a routerLink="my-sets">SETS</a>
+          <a routerLink="my-wanted">WANTED</a>
           <a href="my-minifigures">MINIFIGS</a>
           <a (click)="logout()">Log Out</a>
-          <a href="admin">ADMIN FUNCTIONS</a>
+          <a routerLink="admin">ADMIN FUNCTIONS</a>
         </li>
         <li *ngIf ="!isLoggedIn">
           <a (click)="login()">Log In</a>
         </li>
       </ul>
     </div>
-    
+
     <form class="navbar-form-top navbar-left" action="/action_page.php">
       <div class="input-group" id="search-bar">
         <input type="text" class="form-control" placeholder="Search">

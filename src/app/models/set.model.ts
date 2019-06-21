@@ -3,9 +3,7 @@ export class Set {
   public instructions: boolean = false;
   public pricePerPiece: number = 0.00;
   public currentValue: number = 0.00;
-  public ownIt: boolean = false;
-  public wantIt: boolean = false;
-  constructor(public name: string, public number: number, public type: string, public themeGroup: string, public theme: string, public subTheme: string, public yearReleased: number, public tags: string, public pieces: number, public retailPrice: number, public ageRange: string, public packaging: string, public availability: string, public minifigs: number) {}
+  constructor(public name: string, public number: number, public type: string, public themeGroup: string, public theme: string, public subTheme: string, public yearReleased: number, public tags: string, public pieces: number, public retailPrice: number, public ageRange: string, public packaging: string, public availability: string, public minifigs: number, public ownIt: boolean = false, public wantIt: boolean = false) {}
 
   getPartToPriceRatio() {
     return (this.retailPrice/this.pieces).toFixed(2);

@@ -1,0 +1,19 @@
+<h3>My Sets</h3>
+
+<ul>
+  <li *ngFor="let set of sets | async | owned:filterByOwned" class="panel panel-default">
+    <div class="panel-body">
+      <img class="set-img" src="../../assets/img/sets/{{set.number}}.jpg" weight=200 height=200>
+      <p><span id="tags">{{set.tags}}</span></p>
+      <p>PIECES {{set.pieces}}</p>
+      <p>RRP {{set.retailPrice}} | More</p>
+      <p>PPP {{set.getPartToPriceRatio}}</p>
+      <p>PACKAGING {{set.packaging}}</p>
+      <p>AVAILABILITY {{set.availability}}</p>
+      <p>FIRST SOLD {{set.yearReleased}}</p>
+      <p>INSTRUCTIONS {{set.getInstructions}}</p>
+      <p>ADDITIONAL IMAGES {{set.addImages}}</p>
+      <p>SET TYPE {{set.type}}</p>
+    </div>
+  </li>
+</ul>

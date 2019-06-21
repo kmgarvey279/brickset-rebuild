@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, Input, OnInit} from '@angular/core';
 import { Set } from '../models/set.model';
 import { Router } from '@angular/router';
 import { SetService } from '../set.service';
@@ -12,6 +12,7 @@ import { Location } from '@angular/common';
   providers: [SetService]
 })
 export class SetListComponent implements OnInit {
+  @Input() selectedSet;
   sets: FirebaseListObservable<any[]>
   currentRoute: string = this.router.url;
   filterByTheme: string = "displayNone";
@@ -22,10 +23,12 @@ export class SetListComponent implements OnInit {
 
   addToOwnedList(selectedSet:Set) {
       selectedSet.ownIt = !selectedSet.ownIt;
+      this.setService.updateSet(selectedSet);
   }
 
   addToWantedList(selectedSet:Set) {
       selectedSet.wantIt = !selectedSet.wantIt;
+      this.setService.updateSet(selectedSet);
   }
 
   ownColor(currentSet) {
@@ -39,7 +42,6 @@ export class SetListComponent implements OnInit {
       return "bg-warning";
     }
   }
-
 
   ngOnInit(){
     this.sets = this.setService.getSets();

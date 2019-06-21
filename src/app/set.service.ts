@@ -36,7 +36,9 @@ export class SetService {
                               retailPrice: localUpdatedSet.retailPrice,
                               ageRange: localUpdatedSet.ageRange,
                               packaging: localUpdatedSet.packaging,
-                              availability: localUpdatedSet.availability});
+                              availability: localUpdatedSet.availability,
+                              ownIt: localUpdatedSet.ownIt,
+                              wantIt: localUpdatedSet.wantIt});
   }
 
   deleteSet(localSetToDelete) {

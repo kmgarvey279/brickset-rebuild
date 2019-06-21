@@ -12,7 +12,9 @@
     "ageRange": "16+",
     "packaging": "Box",
     "availability": "LEGO exclusive",
-    "minifigs": "6"
+    "minifigs": "6",
+    "ownIt": "false",
+    "wantIt": "false"
     }, {
     "name": "Vestas Wind Turbine",
     "number": "10268-1",
@@ -27,7 +29,9 @@
     "ageRange": "12+",
     "packaging": "Box",
     "availability": "Retail-limited",
-    "minifigs": "3"
+    "minifigs": "3",
+    "ownIt": "false",
+    "wantIt": "false"
     }, {
     "name": "Orange Creative Box",
     "number": "10709-1",
@@ -42,7 +46,9 @@
     "ageRange": "4-99",
     "packaging": "Box",
     "availability": "Retail",
-    "minifigs": "0"
+    "minifigs": "0",
+    "ownIt": "false",
+    "wantIt": "false"
     }, {
     "name": "Police Helicopter Chase",
     "number": "10720-1",
@@ -57,7 +63,9 @@
     "ageRange": "4-7",
     "packaging": "Box",
     "availability": "Retail",
-    "minifigs": "2"
+    "minifigs": "2",
+    "ownIt": "false",
+    "wantIt": "false"
     }, {
     "name": "Pop Star Recording Studio",
     "number": "41103-1",
@@ -72,7 +80,9 @@
     "ageRange": "6-12",
     "packaging": "Box",
     "availability": "Retail",
-    "minifigs": "1"
+    "minifigs": "1",
+    "ownIt": "false",
+    "wantIt": "false"
     }, {
     "name": "Race Car",
     "number": "60053-1",
@@ -87,7 +97,9 @@
     "ageRange": "5-12",
     "packaging": "Box",
     "availability": "Retail",
-    "minifigs": "1"
+    "minifigs": "1",
+    "ownIt": "false",
+    "wantIt": "false"
     }, {
     "name": "Ewok Village",
     "number": "10236-1",
@@ -102,6 +114,8 @@
     "ageRange": "12+",
     "packaging": "Box",
     "availability": "LEGO Exclusive",
-    "minifigs": "17"
+    "minifigs": "17",
+    "ownIt": "false",
+    "wantIt": "false"
   }]
 }

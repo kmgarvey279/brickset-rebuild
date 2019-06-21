@@ -24,6 +24,8 @@ import { OwnedPipe } from './owned.pipe';
 import { BrowseComponent } from './browse/browse.component';
 import { ThemesYearsListComponent } from './themes-years-list/themes-years-list.component';
 import { MyCollectionComponent } from './my-collection/my-collection.component';
+import { MySetsComponent } from './my-sets/my-sets.component';
+import { WantedSetsComponent } from './wanted-sets/wanted-sets.component';
 
 
 export const firebaseConfig = {
@@ -51,6 +53,8 @@ export const firebaseConfig = {
     BrowseComponent,
     ThemesYearsListComponent,
     MyCollectionComponent,
+    MySetsComponent,
+    WantedSetsComponent,
   ],
   imports: [
     BrowserModule,
