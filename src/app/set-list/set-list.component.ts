@@ -21,15 +21,11 @@ export class SetListComponent implements OnInit {
   constructor(private router: Router, private setService: SetService, private location: Location){}
 
   addToOwnedList(selectedSet:Set) {
-      selectedSet.ownIt = !selectedSet.ownIt
+      selectedSet.ownIt = !selectedSet.ownIt;
   }
 
   addToWantedList(selectedSet:Set) {
-    if (selectedSet.wantIt == false) {
-      selectedSet.wantIt = true;
-    } else {
-      selectedSet.wantIt = false;
-    }
+      selectedSet.wantIt = !selectedSet.wantIt;
   }
 
   ownColor(currentSet) {

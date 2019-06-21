@@ -155,3 +155,7 @@
   left: 0;
   text-decoration:none;
 }
+
+li {
+  list-style: none; 
+}

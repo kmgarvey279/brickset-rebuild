@@ -8,24 +8,18 @@
       <ul>
         <li *ngIf="isLoggedIn">
           <a>{{userName}}</a>
+          <a href="my-sets">SETS</a>
+          <a href="my-wanted">WANTED</a>
+          <a href="my-minifigures">MINIFIGS</a>
           <a (click)="logout()">Log Out</a>
+          <a href="admin">ADMIN FUNCTIONS</a>
         </li>
         <li *ngIf ="!isLoggedIn">
           <a (click)="login()">Log In</a>
         </li>
       </ul>
-
-      <a href="my-sets">SETS</a>
-      <a href="my-wanted">WANTED</a>
-      <a href="my-minifigures">MINIFIGS</a>
-      <a href="admin">ADMIN FUNCTIONS</a>
     </div>
-    <!-- <div id="log-in">
-      <a href="#">Login</a>
-    </div>
-    <div id="sign-up">
-      <a href="#">Sign Up</a>
-    </div> -->
+    
     <form class="navbar-form-top navbar-left" action="/action_page.php">
       <div class="input-group" id="search-bar">
         <input type="text" class="form-control" placeholder="Search">
@@ -39,8 +33,7 @@
           <option value="members">members</option>
         </select>
         <div class="input-group-btn">
-          <button class="btn btn-default" type="submit">
-            <i class="glyphicon glyphicon-search"></i>
+          <button class="btn btn-default" type="submit">Search
           </button>
         </div>
       </div>

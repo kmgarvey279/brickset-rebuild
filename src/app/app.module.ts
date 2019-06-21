@@ -19,6 +19,8 @@ import { routing } from './app.routing';
 import { ThemePipe } from './theme.pipe';
 import { CategoryPipe } from './category.pipe';
 import { YearPipe } from './year.pipe';
+import { WantedPipe } from './wanted.pipe';
+import { OwnedPipe } from './owned.pipe';
 import { BrowseComponent } from './browse/browse.component';
 import { ThemesYearsListComponent } from './themes-years-list/themes-years-list.component';
 import { MyCollectionComponent } from './my-collection/my-collection.component';
@@ -40,6 +42,8 @@ export const firebaseConfig = {
     ThemePipe,
     YearPipe,
     CategoryPipe,
+    WantedPipe,
+    OwnedPipe,
     DeleteSetComponent,
     AdminComponent,
     SetDetailComponent,
