@@ -72,21 +72,24 @@
         <div class="col-lg">
           <h3 (click)="goToDetailPage(set)">{{set.number}}:{{set.name}}</h3><br>
           <p><span id="tags">{{set.tags}}</span></p>
-          <p>PIECES {{set.pieces}}</p>
-          <p>RRP {{set.retailPrice}} | More</p>
-          <p>PPP {{set.getPartToPriceRatio}}</p>
-          <p>PACKAGING {{set.packaging}}</p>
-          <p>AVAILABILITY {{set.availability}}</p>
-          <p>FIRST SOLD {{set.yearReleased}}</p>
-          <p>INSTRUCTIONS {{set.getInstructions}}</p>
-          <p>ADDITIONAL IMAGES {{set.addImages}}</p>
-          <p>SET TYPE {{set.type}}</p>
+          <p><span id="info">PIECES</span> {{set.pieces}}</p>
+          <p><span id="info">MINIFIGS</span> {{set.minifigs}}</p>
+          <p><span id="info">RRP</span> {{set.retailPrice}} | More</p>
+          <p><span id="info">PPP</span> {{set.getPartToPriceRatio}}</p>
+          <p><span id="info">PACKAGING</span> {{set.packaging}}</p>
+          <p><span id="info">AVAILABILITY</span> {{set.availability}}</p>
+          <p><span id="info">FIRST SOLD</span> {{set.yearReleased}}</p>
+          <p><span id="info">INSTRUCTIONS</span> {{set.getInstructions}}</p>
+          <p><span id="info">ADDITIONAL IMAGES</span> {{set.addImages}}</p>
+          <p><span id="info">SET TYPE</span> {{set.type}}</p>
         </div>
         <div class="col-lg">
           <h6>OUR COMMUNITY</h6>
           <h6>YOUR COLLECTION</h6>
-          <input type="checkbox" name="owned">I own <input #numberOwned> of this set<br>
-          <input type="checkbox" name="wanted">I want this set<br>
+          <div ng-class="{'owned' : (set.ownIt == true)}">
+            <input type="checkbox" name="owned" (click)="set.addToOwnedList()">I own this set<br>
+          </div>
+          <input type="checkbox" name="wanted" (click)="set.addToWantedList()">I want this set<br>
           <h6>YOUR RATING</h6>
           <h6>YOUR BRICKLISTS</h6>
           <a href="#">ADD SET TO A BRICKLIST</a>

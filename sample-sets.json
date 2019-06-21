@@ -12,6 +12,7 @@
     "ageRange": "16+",
     "packaging": "Box",
     "availability": "LEGO exclusive",
+    "minifigs": "6"
     }, {
     "name": "Vestas Wind Turbine",
     "number": "10268-1",
@@ -26,9 +27,10 @@
     "ageRange": "12+",
     "packaging": "Box",
     "availability": "Retail-limited",
+    "minifigs": "3"
     }, {
     "name": "Orange Creative Box",
-    "number": "10709",
+    "number": "10709-1",
     "type": "Normal",
     "themeGroup": "Basic",
     "theme": "Classic",
@@ -40,6 +42,7 @@
     "ageRange": "4-99",
     "packaging": "Box",
     "availability": "Retail",
+    "minifigs": "0"
     }, {
     "name": "Police Helicopter Chase",
     "number": "10720-1",
@@ -54,5 +57,51 @@
     "ageRange": "4-7",
     "packaging": "Box",
     "availability": "Retail",
+    "minifigs": "2"
+    }, {
+    "name": "Pop Star Recording Studio",
+    "number": "41103-1",
+    "type": "Normal",
+    "themeGroup": "Girls",
+    "theme": "Friends",
+    "subTheme": "Pop Star",
+    "yearReleased": "2015",
+    "tags": "Music, Camera",
+    "pieces": "171",
+    "retailPrice": "14.99",
+    "ageRange": "6-12",
+    "packaging": "Box",
+    "availability": "Retail",
+    "minifigs": "1"
+    }, {
+    "name": "Race Car",
+    "number": "60053-1",
+    "type": "Normal",
+    "themeGroup": "Modern Day",
+    "theme": "City",
+    "subTheme": "Traffic",
+    "yearReleased": "2014",
+    "tags": "Racing, Octan",
+    "pieces": "99",
+    "retailPrice": "9.99",
+    "ageRange": "5-12",
+    "packaging": "Box",
+    "availability": "Retail",
+    "minifigs": "1"
+    }, {
+    "name": "Ewok Village",
+    "number": "10236-1",
+    "type": "Normal",
+    "themeGroup": "Licensed",
+    "theme": "Star Wars",
+    "subTheme": "Ultimate Collectors Series",
+    "yearReleased": "2013",
+    "tags": "C-3PO, Ewok",
+    "pieces": "1986",
+    "retailPrice": "249.99",
+    "ageRange": "12+",
+    "packaging": "Box",
+    "availability": "LEGO Exclusive",
+    "minifigs": "17"
   }]
 }

@@ -4,7 +4,7 @@
     <div id="float-wrap">
     <div class="card">
       <div class="card-header">SET DETAILS</div>
-      <div class="card-body">  
+      <div class="card-body">
         <div class="row">
           <div class="col-sm">
             <p>SET NUMBER</p>
@@ -174,9 +174,10 @@
   </div>
   <br>
   <div class="card">
-    <h4>IMAGE</h4><h4>MINIFIGS</h4><h4>PARTS {{setToDisplay?.parts}}</h4>
+    <h4>IMAGE MINIFIGS {{setToDisplay?.minifigs}} PARTS {{setToDisplay?.pieces}}</h4>
 
     <div class="show-image">
+      <img class="set-img" src="../../assets/img/sets/{{setToDisplay?.number}}.jpg" weight=600 height=600>
       <p>@ {{setToDisplay?.yearReleased}} LEGO Group.</p>
     </div>
 

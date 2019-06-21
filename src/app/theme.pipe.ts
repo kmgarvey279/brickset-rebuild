@@ -16,9 +16,9 @@ export class ThemePipe implements PipeTransform {
         }
       }
       return output;
-    } else if (desiredTheme == "Junior") {
+    } else if (desiredTheme == "Juniors") {
         for (let i = 0; i < input.length; i++) {
-          if (input[i].theme == "Junior") {
+          if (input[i].theme == "Juniors") {
             output.push(input[i]);
           }
         }

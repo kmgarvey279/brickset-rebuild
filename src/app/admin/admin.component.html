@@ -143,7 +143,13 @@
         </select>
       </div>
 
-      <button (click)="submitForm(newName.value, newNumber.value, newType.value, newThemeGroup.value, newTheme.value, newSubTheme.value, newYearReleased.value, newTags.value, newPieces.value, newRetailPrice.value, newAgeRange.value, newPackaging.value, newAvailability.value); newName.value=''; newNumber.value=''; newType.value=''; newThemeGroup.value=''; newTheme.value=''; newSubTheme.value=''; newYearReleased.value=''; newTags.value=''; newPieces.value=''; newRetailPrice.value=''; newAgeRange.value=''; newPackaging.value=''; newAvailability.value=''">Add</button>
+      <div>
+        <label>Number of Minifigures:</label>
+        <br>
+        <input #newMinifigs>
+      </div>
+
+      <button (click)="submitForm(newName.value, newNumber.value, newType.value, newThemeGroup.value, newTheme.value, newSubTheme.value, newYearReleased.value, newTags.value, newPieces.value, newRetailPrice.value, newAgeRange.value, newPackaging.value, newAvailability.value, newMinifigs.value); newName.value=''; newNumber.value=''; newType.value=''; newThemeGroup.value=''; newTheme.value=''; newSubTheme.value=''; newYearReleased.value=''; newTags.value=''; newPieces.value=''; newRetailPrice.value=''; newAgeRange.value=''; newPackaging.value=''; newAvailability.value=''; newMinifigs.value=''">Add</button>
     </div>
   </div>
 </div>

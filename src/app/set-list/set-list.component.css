@@ -21,5 +21,18 @@ li {
 }
 
 .panel-body {
-  padding-top: 20px; 
+  padding-top: 20px;
+}
+
+#info {
+  color:gray;
+}
+
+#tags {
+  background-color: lightblue;
+  color: white;
+}
+
+.owned {
+  background-color: green;
 }

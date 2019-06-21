@@ -31,6 +31,9 @@
 <label>Tags:</label>
 <input [(ngModel)]="selectedSet.tags">
 
+<label>Minifigs:</label>
+<input [(ngModel)]="selectedSet.minifigs">
+
 <button (click)="beginUpdatingSet(selectedSet)">Update</button>
 <hr>
 <button (click)="beginDeletingSet(selectedSet)">Delete</button>
