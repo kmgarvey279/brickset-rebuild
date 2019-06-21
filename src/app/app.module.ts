@@ -22,7 +22,7 @@ import { YearPipe } from './year.pipe';
 import { BrowseComponent } from './browse/browse.component';
 import { ThemesYearsListComponent } from './themes-years-list/themes-years-list.component';
 import { MyCollectionComponent } from './my-collection/my-collection.component';
-import { NewUserComponent } from './new-user/new-user.component';
+
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -47,7 +47,6 @@ export const firebaseConfig = {
     BrowseComponent,
     ThemesYearsListComponent,
     MyCollectionComponent,
-    NewUserComponent
   ],
   imports: [
     BrowserModule,

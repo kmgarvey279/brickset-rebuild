@@ -24,6 +24,10 @@ export class SetListComponent implements OnInit {
     this.sets = this.setService.getSets();
   }
 
+  goToDetailPage(clickedSet){
+    this.router.navigate(['sets', clickedSet.$key]);
+  };
+
   onChange(optionFromMenu) {
     this.filterByTheme = optionFromMenu;
     this.filterByYear = optionFromMenu;

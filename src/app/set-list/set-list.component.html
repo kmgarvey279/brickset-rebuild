@@ -67,7 +67,7 @@
     <div class="panel-body">
       <div class="row">
         <div class="col-lg">
-          <span id="set-image"></span>
+          <img class="set-img" src="../../assets/img/sets/{{set.number}}.jpg" weight=200 height=200>
         </div>
         <div class="col-lg">
           <h3 (click)="goToDetailPage(set)">{{set.number}}:{{set.name}}</h3><br>
@@ -95,38 +95,77 @@
         </div>
       </div>
     </div>
+    <div class="divider"></div>
   </li>
 
   <li *ngFor="let set of sets | async | year:filterByYear" class="panel panel-default">
     <div class="panel-body">
-      <h3 (click)="goToDetailPage(set)">{{set.number}}:{{set.name}}</h3><br>
-      <p><span id="tags">{{set.tags}}</span></p><br>
-      <p>PIECES {{set.pieces}}</p><br>
-      <p>RRP {{set.retailPrice}} | More</p><br>
-      <p>PPP {{set.getPartToPriceRatio}}</p><br>
-      <p>PACKAGING {{set.packaging}}</p><br>
-      <p>AVAILABILITY {{set.availability}}</p><br>
-      <p>FIRST SOLD {{set.yearReleased}}</p><br>
-      <p>INSTRUCTIONS {{set.getInstructions}}</p><br>
-      <p>ADDITIONAL IMAGES {{set.addImages}}</p><br>
-      <p>SET TYPE {{set.type}}</p>
+      <div class="row">
+        <div class="col-lg">
+          <img class="set-img" src="../../assets/img/sets/{{set.number}}.jpg" weight=200 height=200>
+        </div>
+        <div class="col-lg">
+          <h3 (click)="goToDetailPage(set)">{{set.number}}:{{set.name}}</h3><br>
+          <p><span id="tags">{{set.tags}}</span></p>
+          <p>PIECES {{set.pieces}}</p>
+          <p>RRP {{set.retailPrice}} | More</p>
+          <p>PPP {{set.getPartToPriceRatio}}</p>
+          <p>PACKAGING {{set.packaging}}</p>
+          <p>AVAILABILITY {{set.availability}}</p>
+          <p>FIRST SOLD {{set.yearReleased}}</p>
+          <p>INSTRUCTIONS {{set.getInstructions}}</p>
+          <p>ADDITIONAL IMAGES {{set.addImages}}</p>
+          <p>SET TYPE {{set.type}}</p>
+        </div>
+        <div class="col-lg">
+          <h6>OUR COMMUNITY</h6>
+          <h6>YOUR COLLECTION</h6>
+          <input type="checkbox" name="owned">I own <input #numberOwned> of this set<br>
+          <input type="checkbox" name="wanted">I want this set<br>
+          <h6>YOUR RATING</h6>
+          <h6>YOUR BRICKLISTS</h6>
+          <a href="#">ADD SET TO A BRICKLIST</a>
+          <h6>BUY THIS SET AT</h6>
+          <a href="#">LEGO</a><a href="#">AMAZON</a><a href="#">EBAY</a><a href="#">BRICKLINK</a>
+        </div>
+      </div>
     </div>
+    <div class="divider"></div>
   </li>
 
   <li *ngFor="let set of sets | async | category:filterByCategory" class="panel panel-default">
     <div class="panel-body">
-      <h3 (click)="goToDetailPage(set)">{{set.number}}:{{set.name}}</h3><br>
-      <p><span id="tags">{{set.tags}}</span></p><br>
-      <p>PIECES {{set.pieces}}</p><br>
-      <p>RRP {{set.retailPrice}} | More</p><br>
-      <p>PPP {{set.getPartToPriceRatio}}</p><br>
-      <p>PACKAGING {{set.packaging}}</p><br>
-      <p>AVAILABILITY {{set.availability}}</p><br>
-      <p>FIRST SOLD {{set.yearReleased}}</p><br>
-      <p>INSTRUCTIONS {{set.getInstructions}}</p><br>
-      <p>ADDITIONAL IMAGES {{set.addImages}}</p><br>
-      <p>SET TYPE {{set.type}}</p>
+      <div class="row">
+        <div class="col-lg">
+          <img class="set-img" src="../../assets/img/sets/{{set.number}}.jpg" weight=200 height=200>
+        </div>
+        <div class="col-lg">
+          <h3 (click)="goToDetailPage(set)">{{set.number}}:{{set.name}}</h3><br>
+          <p><span id="tags">{{set.tags}}</span></p>
+          <p>PIECES {{set.pieces}}</p>
+          <p>RRP {{set.retailPrice}} | More</p>
+          <p>PPP {{set.getPartToPriceRatio}}</p>
+          <p>PACKAGING {{set.packaging}}</p>
+          <p>AVAILABILITY {{set.availability}}</p>
+          <p>FIRST SOLD {{set.yearReleased}}</p>
+          <p>INSTRUCTIONS {{set.getInstructions}}</p>
+          <p>ADDITIONAL IMAGES {{set.addImages}}</p>
+          <p>SET TYPE {{set.type}}</p>
+        </div>
+        <div class="col-lg">
+          <h6>OUR COMMUNITY</h6>
+          <h6>YOUR COLLECTION</h6>
+          <input type="checkbox" name="owned">I own <input #numberOwned> of this set<br>
+          <input type="checkbox" name="wanted">I want this set<br>
+          <h6>YOUR RATING</h6>
+          <h6>YOUR BRICKLISTS</h6>
+          <a href="#">ADD SET TO A BRICKLIST</a>
+          <h6>BUY THIS SET AT</h6>
+          <a href="#">LEGO</a><a href="#">AMAZON</a><a href="#">EBAY</a><a href="#">BRICKLINK</a>
+        </div>
+      </div>
     </div>
+    <div class="divider"></div>
   </li>
 
 </ul>

@@ -1,7 +1,25 @@
 .panel-body {
-  background-color: lightgray;
+  background-image: linear-gradient(white, whitesmoke);
 }
 
 .location a {
   color: black;
+}
+
+.set-img {
+  margin-left: 60px;
+  margin-top: 40px;
+}
+
+.divider {
+  border-bottom: 5px dotted lightgray;
+  width: 100%
+}
+
+li {
+  list-style: none;
+}
+
+.panel-body {
+  padding-top: 20px; 
 }

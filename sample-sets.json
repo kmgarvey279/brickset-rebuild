@@ -11,7 +11,7 @@
     "retailPrice": "199.99",
     "ageRange": "16+",
     "packaging": "Box",
-    "availability": "LEGO exclusive"
+    "availability": "LEGO exclusive",
     }, {
     "name": "Vestas Wind Turbine",
     "number": "10268-1",
@@ -25,7 +25,7 @@
     "retailPrice": "199.99",
     "ageRange": "12+",
     "packaging": "Box",
-    "availability": "Retail-limited"
+    "availability": "Retail-limited",
     }, {
     "name": "Orange Creative Box",
     "number": "10709",
@@ -39,7 +39,7 @@
     "retailPrice": "4.99",
     "ageRange": "4-99",
     "packaging": "Box",
-    "availability": "Retail"
+    "availability": "Retail",
     }, {
     "name": "Police Helicopter Chase",
     "number": "10720-1",
@@ -53,6 +53,6 @@
     "retailPrice": "9.99",
     "ageRange": "4-7",
     "packaging": "Box",
-    "availability": "Retail"
+    "availability": "Retail",
   }]
 }
