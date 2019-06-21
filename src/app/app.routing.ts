@@ -40,11 +40,11 @@ const appRoutes: Routes = [
     component: MyCollectionComponent
   },
   {
-    path: 'my-sets',
+    path: 'my-collection/my-sets',
     component: MySetsComponent
   },
   {
-    path: 'my-wanted',
+    path: 'my-collection/my-wanted',
     component: WantedSetsComponent
   }
 ];

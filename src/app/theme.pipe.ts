@@ -17,15 +17,29 @@ export class ThemePipe implements PipeTransform {
       }
       return output;
     } else if (desiredTheme == "Juniors") {
-        for (let i = 0; i < input.length; i++) {
-          if (input[i].theme == "Juniors") {
-            output.push(input[i]);
-          }
-        }
-        return output;
-    } else if (desiredTheme == "Creator Expert") {
       for (let i = 0; i < input.length; i++) {
-        if (input[i].theme == "Creator Expert") {
+        if (input[i].theme == "Juniors") {
+          output.push(input[i]);
+        }
+      }
+      return output;
+    } else if (desiredTheme == "City") {
+      for (let i = 0; i < input.length; i++) {
+        if (input[i].theme == "City") {
+          output.push(input[i]);
+        }
+      }
+      return output;
+    } else if (desiredTheme == "Star Wars") {
+      for (let i = 0; i < input.length; i++) {
+        if (input[i].theme == "Star Wars") {
+          output.push(input[i]);
+        }
+      }
+      return output;
+    } else if (desiredTheme == "Friends") {
+      for (let i = 0; i < input.length; i++) {
+        if (input[i].theme == "Friends") {
           output.push(input[i]);
         }
       }

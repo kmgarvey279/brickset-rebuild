@@ -8,9 +8,9 @@
       <ul>
         <li *ngIf="isLoggedIn">
           <a>{{userName}}</a>
-          <a routerLink="my-sets">SETS</a>
-          <a routerLink="my-wanted">WANTED</a>
-          <a href="my-minifigures">MINIFIGS</a>
+          <a routerLink="my-collection/my-sets">SETS</a>
+          <a routerLink="my-collection/my-wanted">WANTED</a>
+          <a id="disabled" href="my-minifigures">MINIFIGS</a>
           <a (click)="logout()">Log Out</a>
           <a routerLink="admin">ADMIN FUNCTIONS</a>
         </li>
@@ -33,7 +33,7 @@
           <option value="members">members</option>
         </select>
         <div class="input-group-btn">
-          <button class="btn btn-default" type="submit">Search
+          <button class="btn btn-default" type="submit"  id="disabled">Search
           </button>
         </div>
       </div>
