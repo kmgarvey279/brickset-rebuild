@@ -15,22 +15,6 @@ export class Set {
     this.instructions = true;
   }
 
-  addToWantedList() {
-    if(this.wantIt == false) {
-      this.wantIt = true;
-    } else {
-      this.wantIt = false;
-    }
-  }
-
-  addToOwnedList() {
-    if(this.ownIt == false) {
-      this.ownIt = true;
-    } else {
-      this.ownIt = false;
-    }
-  }
-
   getInstructions() {
     if (this.instructions == true) {
       return "Yes";

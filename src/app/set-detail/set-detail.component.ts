@@ -38,7 +38,8 @@ export class SetDetailComponent implements OnInit {
                                   dataLastEmittedFromObserver.price,
                                   dataLastEmittedFromObserver.ageRange,
                                   dataLastEmittedFromObserver.packaging,
-                                  dataLastEmittedFromObserver.availability)
+                                  dataLastEmittedFromObserver.availability,
+                                  dataLastEmittedFromObserver.minifigs)
     })
   }
 }

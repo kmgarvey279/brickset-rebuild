@@ -20,6 +20,31 @@ export class SetListComponent implements OnInit {
 
   constructor(private router: Router, private setService: SetService, private location: Location){}
 
+  addToOwnedList(selectedSet:Set) {
+      selectedSet.ownIt = !selectedSet.ownIt
+  }
+
+  addToWantedList(selectedSet:Set) {
+    if (selectedSet.wantIt == false) {
+      selectedSet.wantIt = true;
+    } else {
+      selectedSet.wantIt = false;
+    }
+  }
+
+  ownColor(currentSet) {
+    if(currentSet.ownIt == true) {
+      return "bg-success";
+    }
+  }
+
+  wantColor(currentSet) {
+    if(currentSet.wantIt == true) {
+      return "bg-warning";
+    }
+  }
+
+
   ngOnInit(){
     this.sets = this.setService.getSets();
   }

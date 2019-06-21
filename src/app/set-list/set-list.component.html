@@ -86,10 +86,14 @@
         <div class="col-lg">
           <h6>OUR COMMUNITY</h6>
           <h6>YOUR COLLECTION</h6>
-          <div ng-class="{'owned' : (set.ownIt == true)}">
-            <input type="checkbox" name="owned" (click)="set.addToOwnedList()">I own this set<br>
+          <div [class]="ownColor(set)">
+            <input type="checkbox" (click)="addToOwnedList(set)">I own this set<br>
+            {{set.ownIt}}
           </div>
-          <input type="checkbox" name="wanted" (click)="set.addToWantedList()">I want this set<br>
+          <div [class]="wantColor(set)">
+            <input type="checkbox" (click)="addToWantedList(set)">I want this set<br>
+            {{set.wantIt}}
+          </div>
           <h6>YOUR RATING</h6>
           <h6>YOUR BRICKLISTS</h6>
           <a href="#">ADD SET TO A BRICKLIST</a>
