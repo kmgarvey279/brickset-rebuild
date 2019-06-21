@@ -9,16 +9,16 @@ import { Set } from './models/set.model';
 export class ThemePipe implements PipeTransform {
   transform(input: Set[], desiredTheme) {
     var output: Set[] = [];
-    if(desiredTheme == "Pirates") {
+    if(desiredTheme == "Classic") {
       for (let i = 0; i < input.length; i++) {
-        if (input[i].theme == "Pirates") {
+        if (input[i].theme == "Classic") {
           output.push(input[i]);
         }
       }
       return output;
-    } else if (desiredTheme == "Space") {
+    } else if (desiredTheme == "Junior") {
         for (let i = 0; i < input.length; i++) {
-          if (input[i].theme == "Space") {
+          if (input[i].theme == "Junior") {
             output.push(input[i]);
           }
         }
